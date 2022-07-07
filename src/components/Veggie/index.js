@@ -32,8 +32,8 @@ const Veggie = () => {
             <Splide options={{perPage: 3, arrows: false, pagination: false, drag: "free", gap: "5rem"}}>
             {veggie.map((recipe) => {
               return (
-                <SplideSlide>
-                <Card key={recipe.id}>
+                <SplideSlide key={recipe.id}>
+                <Card >
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
                   <Gradient />

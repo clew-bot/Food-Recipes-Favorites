@@ -32,8 +32,8 @@ const Popular = () => {
             <Splide options={{perPage: 4, arrows: false, pagination: false, drag: "free", gap: "5rem"}}>
             {popular.map((recipe) => {
               return (
-                <SplideSlide>
-                <Card key={recipe.id}>
+                <SplideSlide key={recipe.id}>
+                <Card >
                   <p>{recipe.title}</p>
                   <img src={recipe.image} alt={recipe.title} />
                   <Gradient />
