@@ -18,7 +18,6 @@ const Search = () => {
         <FaSearch />
         <input onChange={(e) => setInput(e.target.value)} type="text" value={input}/>
         </div>
-        <h1>{input}</h1>
     </FormStyle>
   )
 }
